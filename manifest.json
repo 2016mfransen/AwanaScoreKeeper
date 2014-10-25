@@ -1,0 +1,53 @@
+{
+  "manifest_version": 2,
+  "name": "AwanaScoreKeeper",
+  "short_name": "AwanaScoreKeeper",
+  "description": "Score Keeper for the Awana Program",
+
+  "version": "0.0.1.0",
+
+  "icons": {
+    "16": "assets/icon_16.png",
+    "128": "assets/icon_128.png"
+  },
+
+  "app": {
+    "background": {
+      "scripts": ["js/background.js"]
+    }
+  },
+  "permissions": [
+  	"http://www.xstonegames.net/",
+  	"storage"
+  ],
+  "commands": {
+    "save-child": {
+      "suggested_key": {
+        "default": "Ctrl+S",
+        "mac": "Command+S"
+      },
+      "description": "Save The Current Child"
+    },
+    "new-child": {
+      "suggested_key": {
+        "default": "Ctrl+N",
+        "mac": "Command+N"
+      },
+      "description": "Creates A New Child"
+    },
+    "load-child": {
+      "suggested_key": {
+        "default": "Ctrl+O",
+        "mac": "Command+O"
+      },
+      "description": "Loads/Refreshes Selected Child"
+    },
+    "refresh-list": {
+      "suggested_key": {
+        "default": "Ctrl+R",
+        "mac": "Command+R"
+      },
+      "description": "Refreshes The Page"
+    }
+  }
+}

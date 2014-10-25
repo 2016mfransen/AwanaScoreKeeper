@@ -1,0 +1,7 @@
+$(document).ready(function(){
+  $("#loginButton").click(function(){
+    $.post("http://xstonegames.net/api/").done(function(data){
+      console.log(data);
+    });
+  });
+});
